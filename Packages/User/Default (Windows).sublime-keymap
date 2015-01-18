@@ -1,0 +1,35 @@
+[
+{ "keys": ["ctrl+alt+f"], "command": "insert", "args": {"characters": "["} },
+
+{ "keys": ["ctrl+shift+u"], "command": "sftp_upload_file" },
+{ "keys": ["alt+shift+up"], "command": "sftp_upload_file" },
+{ "keys": ["alt+shift+down"], "command": "sftp_download_file" },
+{ "keys": ["ctrl+b"], "command": "sftp_browse" },
+
+{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+{ "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+
+{ "keys": ["ctrl+shift+alt+d"], "command": "duplicate_file" },
+
+{ "keys": ["f2"], "command": "side_bar_rename" },
+
+// { "keys": ["ctrl+o"], "command": "fuzzy_start_from_file" },
+// { "keys": ["ctrl+shift+o"], "command": "fuzzy_bookmarks_load" },
+
+{ "keys": ["ctrl+alt+r"], "command": "side_bar_move" },
+{ "keys": ["ctrl+shift+r"], "command": "reveal_in_side_bar" },
+
+{ "keys": ["ctrl+2"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Snippet: "} },
+
+// Cyrillic to Latin conversion
+{ "keys": ["ctrl+shift+y"], "command": "cyr_lat_all_translit" },
+
+// convert indentation to space ro tabs
+{ "keys": ["c", "t", "s", "!"], "command": "expand_tabs", "args": {"set_translate_tabs": true} },
+{ "keys": ["c", "t", "t", "!"], "command": "unexpand_tabs", "args": {"set_translate_tabs": true} },
+
+// Insert AU comment with current date
+{ "keys": ["alt+shift+c"], "command": "al_ur_comment" },
+{ "keys": ["a", "u", ":"], "command": "al_ur_comment" },
+
+]

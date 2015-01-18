@@ -1,0 +1,29 @@
+<snippet>
+	<content><![CDATA[
+<ul>
+    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+    <li>Pellentesque consectetur consectetur turpis, vel luctus nulla iaculis at.</li>
+    <li>Nulla facilisi.</li>
+    <li>Mauris vitae nibh pharetra lacus viverra dapibus sit amet sit amet diam.</li>
+    <li>Vestibulum vel volutpat augue.</li>
+    <li>Phasellus quis sapien diam.</li>
+    <li>Curabitur tincidunt commodo ornare.</li>
+    <li>Maecenas venenatis dictum lorem, mollis blandit ipsum ultrices a.</li>
+    <li>Pellentesque quis neque nec augue ultrices interdum eu non justo.</li>
+    <li>Nullam ut leo risus.</li>
+    <li>Pellentesque magna tortor, tempus non iaculis tincidunt, vehicula nec lorem.</li>
+    <li>Mauris suscipit mattis lacus vitae vulputate.</li>
+    <li>Fusce feugiat, ligula eu ornare feugiat, nisl massa mollis nisl, nec sagittis ipsum dui at tortor.</li>
+    <li>Suspendisse ac hendrerit neque, vel gravida leo.</li>
+    <li>Donec eleifend sem et porttitor fermentum.</li>
+    <li>Nunc varius, augue eu condimentum blandit, ante turpis molestie quam, eu fringilla leo est bibendum nisi.</li>
+    <li>Etiam et vehicula velit, ut venenatis purus.</li>
+    <li>Nunc posuere semper neque, in pretium ligula mollis id.</li>
+    <li>Integer nunc enim, convallis eleifend magna sed, tristique accumsan lorem.</li>
+</ul>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>loremhl</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

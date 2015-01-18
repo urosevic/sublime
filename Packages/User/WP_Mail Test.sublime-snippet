@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Update variable settings.
+ * Load to your WP root folder.
+ */
+
+// Set $to as the email you want to send the test to
+\$to = " ${1:my@email.com}";
+
+// No need to make changes below this line
+
+// Email subject and body text
+\$subject = '${2:wp_mail function test}';
+\$message = '${3:This is a test of the wp_mail function: wp_mail is working}';
+\$headers = '${4}';
+
+// Load WP components, no themes
+define('WP_USE_THEMES', false);
+require('wp-load.php');
+
+// Call the wp_mail function, display message based on the result.
+if( wp_mail( \$to, \$subject, \$message, \$headers ) ) {
+    // the message was sent...
+    echo '${5:The test message was sent. Check your email inbox.}';
+} else {
+    // the message was not sent...
+    echo '${6:The message was not sent!}';
+};
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wpmail_test</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

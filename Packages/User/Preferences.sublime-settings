@@ -1,0 +1,51 @@
+{
+	"bold_folder_labels": true,
+	"caret_extra_width": 0,
+	"caret_style": "smooth",
+	"color_scheme": "Packages/User/Monokai Gravity (SL).tmTheme",
+	"detect_indentation": true,
+	"draw_indent_guides": true,
+	"draw_minimap_border": true,
+	"draw_white_space": "all",
+	"fade_fold_buttons": true,
+	"font_face": "M+ 1m regular",
+	"font_size": 12,
+	"gutter": true,
+	"hide_disclosure_buttons": true,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"java_command": "C:\\Progrem Files (x86)\\Java\\bin\\java.exe",
+	"keymaps":
+	{
+		"show_pretty_keys": false
+	},
+	"line_padding_bottom": -1,
+	"line_padding_top": -1,
+	"match_brackets": true,
+	"match_brackets_angle": true,
+	"match_brackets_braces": true,
+	"match_brackets_content": true,
+	"match_brackets_square": true,
+	"scroll_past_end": true,
+	"show_encoding": true,
+	"soda_classic_tabs": false,
+	"soda_folder_icons": true,
+	"tab_height": 18,
+	"tab_size": 2,
+	"theme": "Gravity.sublime-theme",
+	"translate_tabs_to_spaces": false,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true,
+	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?-",
+	"yui_compressor": "yuicompressor-2.4.7.jar",
+	"yui_line_break": false
+}

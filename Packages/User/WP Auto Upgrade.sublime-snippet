@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+# Disables all core updates:
+define( 'WP_AUTO_UPDATE_CORE', false );
+ 
+# Enables all core updates, including minor and major:
+#define( 'WP_AUTO_UPDATE_CORE', true );
+
+# Enables core updates for minor releases (default):
+#define( 'WP_AUTO_UPDATE_CORE', 'minor' );
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wpautoupgrade</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

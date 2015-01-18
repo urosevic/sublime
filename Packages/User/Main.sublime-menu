@@ -1,0 +1,67 @@
+[
+   {
+      "caption": "File",
+      "mnemonic": "F",
+      "id": "file",
+      "children":
+      [
+         { "command": "duplicate_file", "caption": "Duplicate File", "mnemonic": "D"}
+      ]
+   },
+   {
+      "caption": "Tools",
+      "mnemonic": "t",
+      "id": "tools",
+      "children":
+      [
+      {
+         "caption": "Web Development",
+         "mnemonic": "d",
+         "id": "webdev",
+         "children":
+         [
+            { "caption": "-" },
+            { "command": "open_file", "caption": "Edit hosts", "mnemonic": "h", "args": {"file":"/C/Windows/System32/drivers/etc/hosts"} },
+            { "command": "open_file", "caption": "WorkLog", "mnemonic": "l", "args": {"file":"/X/devel/online/work.log"} },
+            {
+               "caption": "API",
+               "children":
+               [
+                  { "command": "open_file", "caption": "WishList 1", "mnemonic": "1", "args": {"file":"/X/devel/online/2b1c/secure1/bccom/deploy/wp-content/plugins/wishlist-member/core/Api.php"} },
+                  { "command": "open_file", "caption": "WishList 2", "mnemonic": "2", "args": {"file":"/X/devel/online/2b1c/secure1/bccom/deploy/wp-content/plugins/wishlist-member/core/API2.php"} },
+                  { "command": "open_file", "caption": "InfusionSoft", "mnemonic": "s", "args": {"file":"/X/devel/svn/wp-plugins-premium/2b1c-wl-magicmembers/trunk/isdk_wlm.php"} },
+               ]
+            },
+            { "caption": "-" },
+            {
+               "caption": "Apache Logs",
+               "children":
+               [
+               { "command": "open_file", "caption": "wp41.com debug.log", "mnemonic": "d", "args": {"file":"/X/devel/easyphp/wp41/wp-content/debug.log"}},
+               { "command": "open_file", "caption": "Apache Access", "mnemonic": "a", "args": {"file":"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/binaries/apache/logs/access.log"}},
+               { "command": "open_file", "caption": "Apache Error", "mnemonic": "e", "args": {"file":"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/binaries/apache/logs/error.log"}},
+               ]
+            },
+            {
+               "caption": "WAMP (deprecated)",
+               "children":
+               [
+                  { "command": "open_file", "caption": "Edit WAMP httpd", "mnemonic": "t", "args": {"file":"/C/wamp/bin/apache/Apache2.4.9/conf/httpd.conf"}},
+                  { "command": "open_file", "caption": "Edit WAMP vhosts", "mnemonic": "v", "args": {"file":"/C/wamp/bin/apache/Apache2.4.9/conf/extra/httpd-vhosts.conf"}},
+                  { "caption": "-" },
+                  {
+                     "caption": "Apache Logs",
+                     "children":
+                     [
+                     { "command": "open_file", "caption": "wp.dev Access", "mnemonic": "a", "args": {"file":"/X/devel/wamp/bin/apache/Apache2.4.9/logs/wpdev-access.log"}},
+                     { "command": "open_file", "caption": "wp.dev Error", "mnemonic": "e", "args": {"file":"/X/devel/wamp/bin/apache/Apache2.4.9/logs/wpdev-error.log"}},
+                     { "command": "open_file", "caption": "wp40.com Error", "mnemonic": "4", "args": {"file":"/X/devel/wamp/bin/apache/Apache2.4.9/logs/wp40-error.log"}},
+                     ]
+                  },
+               ]
+            },
+         ]
+      }
+      ]
+   }
+]

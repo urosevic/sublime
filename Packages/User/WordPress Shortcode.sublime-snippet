@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+
+function ${1:function_name}_shortcode( \$atts, \$content = null )
+{
+	extract( shortcode_atts( array(
+		'${3:attr_1}' => '${4:default value 1}',
+		'${5:attr_2}' => '${6:default value 2}'
+	), \$atts ) );
+
+	\$out = \$content;
+
+	${7}
+
+	return \$out;
+}
+add_shortcode('${1:shortcode}', '${1:function_name}_shortcode');
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wpsh</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

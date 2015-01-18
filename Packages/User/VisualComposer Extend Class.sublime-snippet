@@ -1,0 +1,58 @@
+<snippet>
+	<content><![CDATA[
+if(class_exists('VC_Extend') && !class_exists('VCE_${1:ClassName}'))
+{
+	class VCE_${1:ClassName}
+		extends VC_Extend
+	{
+
+		function __construct()
+		{
+			add_shortcode('vc_', array(&\$this, 'shortcode'));
+			add_action('init', array( &\$this, 'init' ) );
+		}
+
+		// Add VC Component
+		function init()
+		{
+			if (function_exists('vc_map'))
+			{
+				global \$category_group;
+				vc_map(
+					array(
+						"name"        => __("${2:Component Name}"),
+						"base"        => "${3:shortcode_name}",
+						"class"       => "",
+						"category"    => \$category_group,
+						"icon"        => "icon-wpb-${4:icon-class}",
+						"description" => "${5:Component Description}",
+						"params"      => array(
+							array(
+								${6:// Insert here elemnt definitions}
+							)
+						)
+					)
+				);
+			}
+		}
+
+		// Add Shortcode
+		function shortcode( \$atts, \$content = null )
+		{
+			// ...
+		}
+
+	} // class VCE_${1:ClassName}
+} // class VC_Extend
+
+if(class_exists('VCE_${1:ClassName}'))
+{
+	\$VCE_${1:ClassName} = new VCE_${1:ClassName};
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>vceclass</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

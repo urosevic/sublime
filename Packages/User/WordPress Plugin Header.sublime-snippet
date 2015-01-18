@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+/**
+ * Plugin Name: ${1:Name Of The Plugin}
+ * Plugin URI: http://${2:URI_Of_Page_Describing_Plugin_and_Updates}
+ * Description: ${3:A brief description of the Plugin.}
+ * Version: ${4:The Plugin's Version Number, e.g.: 1.0}
+ * Author: ${5:Name Of The Plugin Author}
+ * Author URI: http://${6:URI_Of_The_Plugin_Author}
+ * License: ${7:GPL3}
+ */
+
+function ${8:function_name}()
+{
+	${9:code...}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>wpplug</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.php</scope>
+</snippet>

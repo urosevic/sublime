@@ -1,0 +1,75 @@
+<snippet>
+	<content><![CDATA[
+<?php
+
+if ( !class_exists('${1:ClassName}') ) {
+
+	class ${1:ClassName} {
+		protected \$client_id;
+		protected \$client_secret;
+		protected \$token;
+
+		function __construct() {
+
+			// Update to Stillness App
+			\$this->client_id     = "${2:Enter Vimeo API Client ID}";
+			\$this->client_secret = "${3:Enter Vimeo API Client Secret}";
+			\$this->token         = "${4:Enter Vimeo API Token}";
+
+			// call method to execute
+			\$this->vimeo();
+
+		} // eom __construct()
+
+		function vimeo() {
+
+				// prepare endpoint
+				// https://developer.vimeo.com/api/endpoints
+
+				\$video = \$_GET['video'];
+				if ( preg_match('#(https?://vimeo.com/|/videos/)([0-9]+)#', \$video, \$vimeo) ) {
+
+					// extract video ID from url
+					if ( ! empty(\$vimeo[2]) ) {
+						// compose endpoint for API call
+						\$endpoint = '/videos/' . \$vimeo[1];
+
+						// initiate Vimeo API
+						\$lib = "lib/vimeo/autoload.php"; // same directory
+						// \$lib = dirname(__DIR__) . "/lib/vimeo/autoload.php"; // sibling directory
+						require( \$lib );
+
+						\$lib = new \Vimeo\Vimeo(\$this->client_id, \$this->client_secret);
+						\$lib->setToken(\$this->token);
+
+						// get single video object
+						\$response = \$lib->request(\$endpoint, array('per_page' => 1), 'GET');
+
+						// check do we have response with object and body details
+						if ( !empty(\$response) && ! empty(\$response['body']) ) {
+
+							// DO WHATEVER YOU WISH
+							${4:// Do whatever you wish}
+
+						} // ! empty \$response
+
+					} // ! empty \$vimeo[1]
+				}
+			} // not empty \$url
+
+		} // eom vimeo()
+
+	} // eo class ${1:ClassName}
+
+} // eo clas check
+
+global \$${1:ClassName};
+if ( empty(\$${1:ClassName}) )
+	\$${1:ClassName} = new ${1:ClassName};
+?>
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>vimeo</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.php</scope> -->
+</snippet>
