@@ -1,6 +1,6 @@
 # Sublime
 
-My handy [Sublime Text 3](http://www.sublimetext.com/3) custom tools and settings.
+My handy [Sublime Text 3](http://www.sublimetext.com/3) tools and settings.
 
 Most interesting for public can be [Preferences.sublime-settings](Packages/User/Preferences.sublime-settings) and [Main.sublime-menu](Packages/User/Main.sublime-menu).
 
