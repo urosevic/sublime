@@ -1,0 +1,7 @@
+{
+	"non_blocking": false,
+    "vcs_paths": {
+        "diff": "c:/Program Files (x86)/Git/bin/diff.exe",
+        "git": "c:/Program Files (x86)/Git/bin/git.exe",
+    }
+}

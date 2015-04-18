@@ -23,6 +23,7 @@
 
 // Cyrillic to Latin conversion
 { "keys": ["ctrl+shift+y"], "command": "cyr_lat_all_translit" },
+{ "keys": ["ctrl+shift+x"], "command": "lat_to_lat_all_translit" },
 
 // convert indentation to space ro tabs
 { "keys": ["c", "t", "s", "!"], "command": "expand_tabs", "args": {"set_translate_tabs": true} },

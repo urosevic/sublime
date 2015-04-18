@@ -19,7 +19,7 @@ class AlUrCommentCommand(sublime_plugin.TextCommand):
 		d = now.strftime("%Y%m%d")
 
 		# compose content
-		content = "/* AU: %s  */" % d
+		content = "/* AU:%s  */" % d
 
 		# update content in view
 		view.insert(edit, position, content)
