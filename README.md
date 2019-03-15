@@ -34,6 +34,7 @@ Most interesting for public could be [Preferences.sublime-settings](Packages/Use
 1. [Line Endings](https://github.com/titoBouzout/LineEndings): Provides line endings and convert indentation shortcuts for Sublime Text.
 1. [hosts](https://github.com/rodrigoflores/hosts): Support for your /etc/hosts file, including easy commenting and syntax.
 1. [ApacheConf](https://github.com/colinta/ApacheConf.tmLanguage): Support for Apache .conf, .htaccess, .htgroups and .htpasswd files.
+1. [SublimeGremlins](https://github.com/redoPop/SublimeGremlins): Help you to identify invisible and ambiguous Unicode whitespace characters (zero width spaces, no-break spaces, and similar) by highlighting them.
 
 ## Abandoned plugins (which still works fine)
 
