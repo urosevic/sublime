@@ -35,7 +35,7 @@ Most interesting for public could be [Preferences.sublime-settings](Packages/Use
 1. [hosts](https://github.com/rodrigoflores/hosts): Support for your /etc/hosts file, including easy commenting and syntax.
 1. [ApacheConf](https://github.com/colinta/ApacheConf.tmLanguage): Support for Apache .conf, .htaccess, .htgroups and .htpasswd files.
 1. [SublimeGremlins](https://github.com/redoPop/SublimeGremlins): Help you to identify invisible and ambiguous Unicode whitespace characters (zero width spaces, no-break spaces, and similar) by highlighting them.
-
+1. [Non Text Files](https://github.com/bordaigorl/sublime-non-text-files): Allow you to define which binary files should be opened with associated system program (like open PDF in Foxit Reader, ZIP and RAR in 7-Zip, etc)
 ## Abandoned plugins (which still works fine)
 
 1. [SublimeGit](https://github.com/SublimeGit/SublimeGit/): Full-featured Git integration for Sublime Text 2 and 3. _Show `git log` with bunch of additional details, but looks like abandoned project_
@@ -49,4 +49,66 @@ Most interesting for public could be [Preferences.sublime-settings](Packages/Use
 
 ## Console Fonts
 
-Font [M+ 1m regular](http://mplus-fonts.sourceforge.jp/mplus-outline-fonts/download/index-en.html#download)
+[Fira Code](https://github.com/tonsky/FiraCode) support Sublime Text 3 ligatures
+[M+ 1m regular](http://mplus-fonts.sourceforge.jp/mplus-outline-fonts/download/index-en.html#download)
+
+## Hints
+
+If your Sublime Text 3 go crazy with CPU, check how indexing files going on (**Help > Indexing Status...**). Maybe is time to tune up some ST3 settings. Add following to **Preferences > Settings (User)**
+
+```
+	"binary_file_patterns":
+	[
+		"node_modules/",
+		"*.ico",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.bmp",
+		"*.tiff",
+		"*.tga",
+		"*.psd",
+		"*.cdr",
+		"*.ttf",
+		"*.otf",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.tar",
+		"*.gz",
+		"*.bz2"
+	],
+	"index_exclude_patterns":
+	[
+		"*.log",
+		"*.sql",
+		"*/.git/*",
+		"*/.idea/*",
+		"*/bower_components/*",
+		"*/node_modules/*",
+		"*/cache/*",
+		"*.zip",
+		"*.tar",
+		"*.gz",
+		"*.bz2",
+		"access_ssl_log",
+		"access_log",
+		"error_log",
+		"*.pdf"
+	],
+	"index_folder_exclude_patterns":
+	[
+		"tmp",
+		"server",
+		"cache",
+		"node_modules",
+		"bower_components",
+		".git",
+		".idea"
+	],
+```

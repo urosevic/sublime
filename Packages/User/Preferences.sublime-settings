@@ -1,5 +1,29 @@
 {
 	"auto_complete_selector": "source, text",
+	"binary_file_patterns":
+	[
+		"node_modules/",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.bmp",
+		"*.psd",
+		"*.cdr",
+		"*.ttf",
+		"*.otf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip",
+		"*.tar",
+		"*.gz",
+		"*.bz2"
+	],
 	"bold_folder_labels": true,
 	"caret_extra_width": 0,
 	"caret_style": "smooth",
@@ -30,6 +54,34 @@
 	[
 		"draw_normal",
 		"draw_active"
+	],
+	"index_exclude_patterns":
+	[
+		"*.log",
+		"*.sql",
+		"*/.git/*",
+		"*/.idea/*",
+		"*/bower_components/*",
+		"*/node_modules/*",
+		"*/cache/*",
+		"*.zip",
+		"*.tar",
+		"*.gz",
+		"*.bz2",
+		"access_ssl_log",
+		"access_log",
+		"error_log",
+		"*.pdf"
+	],
+	"index_folder_exclude_patterns":
+	[
+		"tmp",
+		"server",
+		"cache",
+		"node_modules",
+		"bower_components",
+		".git",
+		".idea"
 	],
 	"java_command": "C:\\Progrem Files (x86)\\Java\\bin\\java.exe",
 	"keymaps":
