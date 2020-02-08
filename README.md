@@ -30,16 +30,17 @@ Most interesting for public could be [Preferences.sublime-settings](Packages/Use
 1. [LESS syntax for Sublime Text](https://github.com/danro/LESS-sublime): Provides syntax highlighting for .less files, along with snippets and completions.
 1. [Less2Css](https://github.com/timdouglas/sublime-less2css): Compile less files to css on save. Requires lessc installed on PATH.
 1. [Color Picker](https://github.com/weslly/ColorPicker/)
-1. [Color Highlighter](https://sublime.wbond.net/packages/Color%20Highlighter): Plugin for the Sublime text 2 and 3, which underlays selected hexadecimal colorcodes (like "#FFFFFF", "rgb(255,255,255)", "white", etc.) with their real color. Also, plugin adds color picker to easily modify colors.
 1. [Line Endings](https://github.com/titoBouzout/LineEndings): Provides line endings and convert indentation shortcuts for Sublime Text.
 1. [hosts](https://github.com/rodrigoflores/hosts): Support for your /etc/hosts file, including easy commenting and syntax.
 1. [ApacheConf](https://github.com/colinta/ApacheConf.tmLanguage): Support for Apache .conf, .htaccess, .htgroups and .htpasswd files.
 1. [SublimeGremlins](https://github.com/redoPop/SublimeGremlins): Help you to identify invisible and ambiguous Unicode whitespace characters (zero width spaces, no-break spaces, and similar) by highlighting them.
 1. [Non Text Files](https://github.com/bordaigorl/sublime-non-text-files): Allow you to define which binary files should be opened with associated system program (like open PDF in Foxit Reader, ZIP and RAR in 7-Zip, etc)
+
 ## Abandoned plugins (which still works fine)
 
 1. [SublimeGit](https://github.com/SublimeGit/SublimeGit/): Full-featured Git integration for Sublime Text 2 and 3. _Show `git log` with bunch of additional details, but looks like abandoned project_
 1. [WordPress](https://github.com/purplefish32/sublime-text-2-wordpress): Collection of WordPress snippets and autocompletions for Sublime Text 2. Slightly outdated as it's updated for WordPress 3.7 two years ago.
+1. [Color Highlighter](https://sublime.wbond.net/packages/Color%20Highlighter): Plugin for the Sublime text 2 and 3, which underlays selected hexadecimal colorcodes (like "#FFFFFF", "rgb(255,255,255)", "white", etc.) with their real color. Also, plugin adds color picker to easily modify colors. Reason: Does not support .json color schemes in ST3 build 3210
 
 ## Themes
 
