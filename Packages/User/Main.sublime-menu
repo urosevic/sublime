@@ -14,36 +14,21 @@
       "id": "preferences",
       "children":
       [
-         { "command": "open_file", "caption": "Settings - Menu", "mnemonic": "M", "args": {"file":"/C/Users/aleksandar/AppData/Roaming/Sublime Text 3/Packages/User/Main.sublime-menu"} },
+         { "command": "open_file", "caption": "Settings - Menu", "mnemonic": "M", "args": {"file":"${packages}/User/Main.sublime-menu"} },
       ]
    },
    {
-      "caption": "Web Development",
-      "mnemonic": "W",
-      "id": "webdev",
+      "caption": "My Tools",
+      "mnemonic": "M",
+      "id": "mytools",
       "children":
       [
          { "caption": "-" },
          { "command": "open_file", "caption": "Edit hosts", "mnemonic": "h", "args": {"file":"/C/Windows/System32/drivers/etc/hosts"} },
-         { "command": "open_file", "caption": "Work Log", "mnemonic": "L", "args": {"file":"/C/Users/aleksandar/devel/2b1c/work.log"} },
-         { "caption": "-" },
-         { "command": "open_file", "caption": "WishList API v1", "mnemonic": "1", "args": {"file":"/C/Users/aleksandar/devel/2b1c/secure1/bccom/deploy/wp-content/plugins/wishlist-member/core/Api.php"} },
-         { "command": "open_file", "caption": "WishList API v2", "mnemonic": "2", "args": {"file":"/C/Users/aleksandar/devel/2b1c/secure1/bccom/deploy/wp-content/plugins/wishlist-member/core/API2.php"} },
-         { "command": "open_file", "caption": "InfusionSoft API", "mnemonic": "S", "args": {"file":"/C/Users/aleksandar/devel/git/2buy1click/members4wp/2b1c-is-api/isdk/isdk.php"} },
-         { "caption": "-" },
-         {
-            "caption": "Apache Logs",
-            "children":
-            [
-            { "command": "open_file", "caption": "wp41.com debug.log", "mnemonic": "d", "args": {"file":"/C/www/wp41/wp-content/debug.log"}},
-            { "command": "open_file", "caption": "wp42.com debug.log", "mnemonic": "b", "args": {"file":"/C/www/wp42/wp-content/debug.log"}},
-            { "command": "open_file", "caption": "Apache Access", "mnemonic": "A", "args": {"file":"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/binaries/apache/logs/access.log"}},
-            { "command": "open_file", "caption": "Apache Error", "mnemonic": "E", "args": {"file":"/C/Program Files (x86)/EasyPHP-DevServer-14.1VC11/binaries/apache/logs/error.log"}},
-            ]
-         },
          { "caption": "-" },
          { "command": "cyr_lat_all_translit", "caption": "Cyrillic to Latin", "mnemonic": "C" },
-         { "command": "lat_to_lat_all_translit", "caption": "Latin UTF-8 to cp1250", "mnemonic": "L" },
+         { "command": "lat_cyr_all_translit", "caption": "Latin to Cyrillic", "mnemonic": "L" },
+         { "command": "lat_to_lat_all_translit", "caption": "Latin UTF-8 to cp1250", "mnemonic": "A" },
       ]
    }
 ]
